@@ -9,3 +9,5 @@ contains light curves of all the 5 stars.
 2. Find the time period of those exoplanets (because humans don’t want longer
 years). 
 3. Find the distance of those exoplanets from their host stars.
+
+----
