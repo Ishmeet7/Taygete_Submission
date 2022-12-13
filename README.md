@@ -11,3 +11,10 @@ years).
 3. Find the distance of those exoplanets from their host stars.
 
 ----
+
+Code.ipynb file contains my solution for the given problem.
+
+### Instructions for use:
+Download the .fits files from my repository which contains data for the 5 stars.
+You need to make a small change in the above script before running it.
+In the above line of code , you need to change the path from
