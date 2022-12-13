@@ -1,0 +1,7 @@
+Ankur - 1.213
+Arush - 1.48
+Rishi - 1.2
+Rachna - 1.12
+Khushagra - 1
+Masses are relative to sun
+Note : 2 files have been provided by the name of Rishi (Rishi_1 and Rishi_2). You need to combine both the files.
