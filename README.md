@@ -26,7 +26,7 @@ In the above line of code , you need to change the path from
 ----
 To know more about exoplanet and it's transit visit this [link](https://docs.google.com/document/d/1yuy11cfP6FC4a8llFTEoOpWIL79jCH24e_oZ80vzVcU/edit?usp=sharing).Here I have discussed the concepts used to solve this problem and the significance of detecting exoplanets.
 
-This [site](https://viewspace.org/interactives/unveiling_invisible_universe/detecting_other_worlds/transiting_exoplanet) beautifully illustrates the concept used to solve this problem.
+This [site](https://viewspace.org/interactives/unveiling_invisible_universe/detecting_other_worlds/transiting_exoplanet) beautifully illustrates the  exoplanet transit concept used to solve this problem.
 
 ### Approach Used
 
