@@ -16,12 +16,19 @@ years).
 ### Dataset
 Fits files are time series of a star's brightness as recorded by the satellite.
 
-
-
+### Install required packages using
+```
+!pip install lightkurve
+```
 ### Instructions for use:
 Download the .fits files from my repository which contains data for the 5 stars.
 You need to make a small change in the above script before running it.
-In the above line of code , you need to change the path from
+```
+light_curve=lk.read(f'/content/drive/MyDrive/{name}.fits')
+flat_lc=lk.read(f'/content/drive/MyDrive/{name}.fits').flatten(window_length=501)
+```
+
+In the above line of code , you need to change the path from this path to path where you have downloaded fits files.
 
 ----
 To know more about exoplanet and it's transit visit this [link](https://docs.google.com/document/d/1yuy11cfP6FC4a8llFTEoOpWIL79jCH24e_oZ80vzVcU/edit?usp=sharing).Here I have discussed the concepts used to solve this problem and the significance of detecting exoplanets.
