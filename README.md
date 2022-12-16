@@ -11,8 +11,11 @@ years).
 3. Find the distance of those exoplanets from their host stars.
 
 ----
-
 Code.ipynb file contains my solution for the given problem.
+
+To know more about exoplanet and it's transit visit this [link](https://docs.google.com/document/d/1yuy11cfP6FC4a8llFTEoOpWIL79jCH24e_oZ80vzVcU/edit?usp=sharing)
+
+This [site](https://viewspace.org/interactives/unveiling_invisible_universe/detecting_other_worlds/transiting_exoplanet) beautifully illustrates the concept used to solve this problem.
 
 ### Instructions for use:
 Download the .fits files from my repository which contains data for the 5 stars.
