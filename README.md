@@ -13,6 +13,9 @@ years).
 ----
 >Code.ipynb file contains my solution for the given problem.
 
+### Dataset
+Fits files are time series of a star's brightness as recorded by the satellite.
+
 
 
 ### Instructions for use:
