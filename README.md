@@ -14,7 +14,7 @@ years).
 >Code.ipynb file contains my solution for the given problem.
 
 ### Dataset
-Fits files are time series of a star's brightness as recorded by the satellite.
+Fits files are time series of a star's brightness as recorded by the satellite.These files were generated in NASA's Kepler mission.
 
 ### Install required packages using
 ```
@@ -37,5 +37,18 @@ This [site](https://viewspace.org/interactives/unveiling_invisible_universe/dete
 
 ### Approach Used
 
-By measuring the time between successive transit ‘dips’ you can deduce the orbit period of the planet. From the orbit period and the mass of the star you also obtain the distance between the star and the planet
+Light curves are graphs that show the brightness of an object over a period of time.We first get the plots for each of the stars using LightKurve library.By measuring the time between successive transit ‘dips’ we can deduce the orbit period of the planet. From the orbit period and the mass of the star we also obtain the distance between the star and the planet by using Kepler's 3rd Law.
 
+The method used to identify transiting exoplanets is the Box Least Squares (BLS) periodogram analysis.The Box-fitting Least Squares (BLS) algorithm fits the input time series to periodic "box"-shaped functions.Periodic box-shaped functions represent the behavior of a light curve during a transit better than sines and cosines; they are flat except for a repeated periodic dip in brightness that lasts.BLS works by modeling a transit using an upside-down top hat with four parameters: period, duration, depth, and reference time.These parameters are shown in the following sketch.
+
+![BoxLeastSquares](https://docs.astropy.org/en/stable/timeseries/bls-1.svg)
+
+The output from BLS method has several useful columns, but the most useful ones are probably period and power. Using these, we can plot the periodogram
+The highest power spike shows the most likely period, while the lower power spikes are fractional harmonics of the period, for example, 1/2, 1/3, 1/4, etc
+To confirm that this period and transit time (epoch) correspond to a transit signal, we can phase-fold the light curve using these values and plot it.
+
+### References
+
+https://exoplanetarchive.ipac.caltech.edu/docs/pgram/pgram_algo.html#:~:text=The%20BLS%20periodogram%20is%20optimized,exoplanets%20or%20detached%20eclipsing%20binaries.
+
+http://docs.lightkurve.org/tutorials/3-science-examples/exoplanets-identifying-transiting-planet-signals.html
